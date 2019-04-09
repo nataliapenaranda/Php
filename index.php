@@ -5,6 +5,6 @@
     <title>test</title>
 </head>
 <body>
-
+    <? php echo 'Hola mundo'; ?>
 </body>
 </html>
