@@ -15,7 +15,8 @@
         if ($people[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido';
 
-            echo 'Lista de usuarios:' ($people);
+            echo 'Lista de usuarios:';
+            print_r ($people);
 
         }else{
             echo 'Contraseña incorrecta';
