@@ -22,7 +22,6 @@
             echo 'Lista de usuarios:';
             print_r ($people);
 
-
         }else{
             echo 'Contraseña incorrecta';
         }
