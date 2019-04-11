@@ -16,20 +16,20 @@
 
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
-            session_start();
+
             echo '<center><h1>Bienvenido usuario</h1></center>' ;
 
 
             echo '<h2>Lista de usuarios:</h2>';
             print_r ($people);
 
-            sort($people);
+            $estandar = rsort($people);
             echo '<h3>Lista ordenada ascendetemente:</h3>';
-            print_r ($people);
+            print_r ($estandar);
 
-            asort($people);
+            $invertida = asort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
-            print_r ($people);
+            print_r ($invertida);
 
         }else{
             echo 'Contraseña incorrecta';
