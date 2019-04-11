@@ -7,12 +7,12 @@
 <body>
     <?php
     $pass = [
-    "jose" => "cordoba",
+    "natalia" => "cordoba",
     "manuel" => "castillo",
     "krusty" => "ean",
     ];
-    if (isset($pass[$_GET['usser']])){
-        if ($pass[$_GET['usser']] == $_GET['pass']){
+    if (isset($pass[$_POST['usser']])){
+        if ($pass[$_POST['usser']] == $_POST['pass']){
             echo 'Bienvenido';
         }else{
             echo 'Contraseña incorrecta';
