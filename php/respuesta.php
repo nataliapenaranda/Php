@@ -9,7 +9,7 @@
     $people = [
     "usuario1" => "1234",
     "usuario2" => "4321",
-    "usuario3" => "ean",
+    "usuario3" => "9856",
     ];
 
 
@@ -22,11 +22,11 @@
             echo '<h2>Lista de usuarios:</h2>';
             print_r ($people);
 
-            sort($people);
+            $estandar = sort($people);
             echo '<h3>Lista ordenada ascendetemente:</h3>';
             print_r ($people);
 
-            sort($people);
+            $invertida = sort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
             print_r ($people);
 
