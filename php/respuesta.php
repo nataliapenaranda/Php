@@ -6,19 +6,24 @@
 </head>
 <body>
     <?php
-    $pass = [
-    "jose" => "cordoba",
-    "manuel" => "castillo",
-    "krusty" => "ean",
+    $people = [
+    "usuario1" => "1234",
+    "usuario2" => "4321",
+    "usuario3" => "ean",
     ];
-    if (isset($pass[$_GET['usser']])){
-        if ($pass[$_GET['usser']] == $_GET['pass']){
+    if (isset($people[$_GET['usser']])){
+        if ($people[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido';
+
+            echo 'Lista de usuarios:' ($users);
+
         }else{
             echo 'Contraseña incorrecta';
         }
     }else{
         echo 'Usuario no encontrado';
     }
+
+
     ?>
 </body>
