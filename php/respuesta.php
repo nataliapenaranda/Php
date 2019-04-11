@@ -8,9 +8,9 @@
     <?php
 
     $pass = [
-    "jose" => "cordoba",
-    "manuel" => "castillo",
-    "krusty" => "ean",
+    "natalia" => "penaranda",
+    "user" => "1234",
+    "DWeb" => "ean",
     ];
 
     if ($_GET['usser'] in $pass){
