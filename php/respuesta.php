@@ -56,8 +56,7 @@
 
         }else{
             echo 'Contraseña incorrecta';
-            header("HTTP/1.0 404 Not Found");
-            header ('Location: /404.html');
+            header('Location: index.php');
 
         }
     }else{
