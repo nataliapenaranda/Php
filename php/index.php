@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1><?php echo 'Pagina en php'; ?></h1>
-    <h2>Hola cliente</h2>
+    <h2>Hola cliente!!</h2>
 
     <br>
 
