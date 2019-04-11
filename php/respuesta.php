@@ -22,13 +22,13 @@
             echo 'Lista de usuarios:';
             print_r ($people);
 
-            var estandar= sort($people);
+            $estandar= sort($people);
             echo 'Lista ordenada ascendetemente:';
-            print_r (estandar);
+            print_r ($estandar);
 
-            var invertida= asort($people);
+            $invertida= asort($people);
             echo 'Lista ordenada descendetemente:';
-            print_r (invertida);
+            print_r ($invertida);
 
         }else{
             echo 'Contraseña incorrecta';
