@@ -6,14 +6,12 @@
 </head>
 <body>
     <?php
-
     $pass = [
-    "natalia" => "penaranda",
-    "user" => "1234",
-    "DWeb" => "ean",
+    "jose" => "cordoba",
+    "manuel" => "castillo",
+    "krusty" => "ean",
     ];
-
-    if ($_GET['usser'] in $pass){
+    if (isset($pass[$_GET['usser']])){
         if ($pass[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido';
         }else{
@@ -22,7 +20,5 @@
     }else{
         echo 'Usuario no encontrado';
     }
-
     ?>
 </body>
-</html>
