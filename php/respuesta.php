@@ -12,8 +12,8 @@
     ];
 
     $people = array('usser');
-
-    echo (sort($people););
+    sort($people);
+    echo (var_export($people));
 
     if (isset($pass[$_GET['usser']])){
         if ($pass[$_GET['usser']] == $_GET['pass']){
