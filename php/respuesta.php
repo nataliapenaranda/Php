@@ -11,12 +11,14 @@
     "ean" => "1234",
     ];
 
-    $people = array('usser');
+    $people = array('usuario');
     sort($people);
     echo (var_export($people));
 
-    if (isset($pass[$_GET['usser']])){
-        if ($pass[$_GET['usser']] == $_GET['pass']){
+
+
+    if (isset($pass[$_GET['usuario']])){
+        if ($pass[$_GET['usuario']] == $_GET['password']){
             echo 'Bienvenido';
         }else{
             echo 'Contraseña incorrecta';
