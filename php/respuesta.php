@@ -11,12 +11,19 @@
     "usuario2" => "4321",
     "usuario3" => "ean",
     ];
-    if (isset($people[$_GET['usser']])){
-        if ($people[$_GET['usser']] == $_GET['pass']){
-            echo 'Bienvenido';
+
+    function ordenar(){
 
             echo 'Lista de usuarios:';
             print_r ($people);
+
+    }
+    if (isset($people[$_GET['usser']])){
+        if ($people[$_GET['usser']] == $_GET['pass']){
+            echo 'Bienvenido usuario' ;
+
+            ordenar();
+
 
         }else{
             echo 'Contraseña incorrecta';
