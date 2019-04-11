@@ -10,6 +10,10 @@
     "natalia" => "penaranda",
     "ean" => "1234",
     ];
+
+    if($_POST)
+    echo "El usuario recibido es: " .$_POST['usser']. " y la contraseña es " .$_POST['pass'];
+
     if (isset($pass[$_GET['usser']])){
         if ($pass[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido';
