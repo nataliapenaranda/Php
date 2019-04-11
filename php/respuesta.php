@@ -16,6 +16,7 @@
 
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
+            session_start();
             echo '<center><h1>Bienvenido usuario</h1></center>' ;
 
 
