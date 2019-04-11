@@ -7,18 +7,12 @@
 <body>
     <?php
     $pass = [
-    "natalia" => "penaranda",
-    "ean" => "1234",
+    "jose" => "cordoba",
+    "manuel" => "castillo",
+    "krusty" => "ean",
     ];
-
-    $people = array('usuario');
-    sort($people);
-    echo (var_export($people));
-
-
-
-    if (isset($pass[$_GET['usuario']])){
-        if ($pass[$_GET['usuario']] == $_GET['password']){
+    if (isset($pass[$_GET['usser']])){
+        if ($pass[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido';
         }else{
             echo 'Contraseña incorrecta';
@@ -28,4 +22,3 @@
     }
     ?>
 </body>
-</html>
