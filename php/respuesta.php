@@ -32,6 +32,7 @@
 
         }else{
             echo 'Contraseña incorrecta';
+            header("Location: index.php");
         }
     }else{
         echo 'Usuario no encontrado';
