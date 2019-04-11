@@ -22,11 +22,11 @@
             echo '<h2>Lista de usuarios:</h2>';
             print_r ($people);
 
-            $estandar = sort($people);
+            $estandar = $people.sort();
             echo '<h3>Lista ordenada ascendetemente:</h3>';
             print_r ($estandar);
 
-            $invertida = sort($people);
+            $invertida = asort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
             print_r ($invertida);
 
