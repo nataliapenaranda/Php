@@ -18,5 +18,4 @@
         <input type="submit" value="Enviar">
     </form>
 
-    Bienvenido <?php echo htmlspecialchars($_POST['usuario']); ?>.Recuerde que su contraseña es <?php echo (int)$_POST['password']; ?>.
 </body>
