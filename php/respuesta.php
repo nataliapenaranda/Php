@@ -24,7 +24,7 @@
 
             $estandar = sort($people);
             echo '<h3>Lista ordenada ascendetemente:</h3>';
-            echo '$estandar';
+            echo $estandar;
 
             $invertida = asort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
