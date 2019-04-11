@@ -60,9 +60,9 @@
 
         }
     }else{
-        echo 'Usuario no encontrado';
         header("HTTP/1.0 404 Not Found");
         header ('Location: /404.html');
+        echo 'Usuario no encontrado';
     }
 
 
