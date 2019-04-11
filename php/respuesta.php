@@ -55,12 +55,12 @@
 
 
         }else{
-            <!--Se genera redireccionamiento para volver a digitar los datos-->
+            //Se genera redireccionamiento para volver a digitar los datos
             header('Location: index.php');
 
         }
     }else{
-        <!--Se genera un error al no existir el usuario-->
+        //Se genera un error al no existir el usuario
         header("HTTP/1.0 404 Not Found");
         header ('Location: /404.html');
 
