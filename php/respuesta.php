@@ -28,7 +28,7 @@
 
             $invertida = asort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
-            print_r ($invertida);
+            print_r ($people);
 
         }else{
             echo 'Contraseña incorrecta';
