@@ -12,16 +12,16 @@
     "usuario3" => "ean",
     ];
 
-    function ordenar(){
 
-            echo 'Lista de usuarios:';
-            print_r ($people);
-
-    }
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido usuario' ;
 
+            function ordenar(){
+                echo 'Lista de usuarios:';
+                print_r ($people);
+
+            }
             ordenar();
 
 
