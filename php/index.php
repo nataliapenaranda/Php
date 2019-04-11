@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Respuesta</title>
 </head>
 <body>
-    <h1><?php echo 'Pagina en php'; ?></h1>
-    <h2>Bienvenido.</h2>
-    <p>Esta es una pagina desarollada en PHP</p>
-
-    <br>
-
-    <form action="respuesta.php" method="get">
-        <input type="text" name="usser" id="usser" placeholder="Usuario">
-        <input type="password" name="pass" id="pass" placeholder="Contraseña">
-        <input type="submit" value="Enviar">
-    </form>
+    <?php
+    $pass = [
+    "jose" => "cordoba",
+    "manuel" => "castillo",
+    "krusty" => "ean",
+    ];
+    if (isset($pass[$_GET['usser']])){
+        if ($pass[$_GET['usser']] == $_GET['pass']){
+            echo 'Bienvenido';
+        }else{
+            echo 'Contraseña incorrecta';
+        }
+    }else{
+        echo 'Usuario no encontrado';
+    }
+    ?>
 </body>
 </html>
