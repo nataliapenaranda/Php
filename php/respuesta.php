@@ -16,21 +16,18 @@
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
 
-            function ordenar(){
-                echo '<center><h1>Bienvenido usuario</h1></center>' ;
-                echo '<h2>Lista de usuarios:</h2>';
-                print_r($people);
+            echo '<center><h1>Bienvenido usuario</h1></center>' ;
+            echo '<h2>Lista de usuarios:</h2>';
+            print_r($people);
 
-                ksort($people);
-                echo '<h3>Lista ordenada ascendetemente:</h3>';
-                print_r($people);
+            ksort($people);
+            echo '<h3>Lista ordenada ascendetemente:</h3>';
+            print_r($people);
 
-                krsort($people);
-                echo '<h4>Lista ordenada descendetemente:</h4>';
-                print_r($people);
-            }
+            krsort($people);
+            echo '<h4>Lista ordenada descendetemente:</h4>';
+            print_r($people);
 
-            ordenar();
 
         }else{
             echo 'Contraseña incorrecta';
