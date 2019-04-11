@@ -13,16 +13,18 @@
     ];
 
 
+
+
+
+
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido usuario' ;
 
-            function ordenar(){
-                echo 'Lista de usuarios:';
-                print_r ($people);
+            <br>
 
-            }
-            ordenar();
+            echo 'Lista de usuarios:';
+            print_r ($people);
 
 
         }else{
