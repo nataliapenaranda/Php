@@ -12,7 +12,7 @@
     "usuario3" => "9856",
     ];
 
-    function ordenar(){
+    function ordenar($people){
         echo '<center><h1>Bienvenido usuario</h1></center>' ;
             echo '<h2>Lista de usuarios:</h2>';
             print_r($people);
