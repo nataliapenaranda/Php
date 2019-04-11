@@ -14,14 +14,10 @@
 
 
 
-
-
-
     if (isset($people[$_GET['usser']])){
         if ($people[$_GET['usser']] == $_GET['pass']){
             echo 'Bienvenido usuario' ;
 
-            <br>
 
             echo 'Lista de usuarios:';
             print_r ($people);
