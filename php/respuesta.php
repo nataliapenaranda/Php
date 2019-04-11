@@ -22,12 +22,13 @@
             echo '<h2>Lista de usuarios:</h2>';
             print_r ($people);
 
+            $estandar = sort($people);
             echo '<h3>Lista ordenada ascendetemente:</h3>';
-            print_r (sort($people));
+            print_r ($people);
 
             $invertida = asort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
-            print_r ($people);
+            print_r ($invertida);
 
         }else{
             echo 'Contraseña incorrecta';
