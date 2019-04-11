@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Respuesta</title>
+    <title>Respuesta Inicio de Sesion</title>
 </head>
 <body>
     <?php
@@ -22,17 +22,16 @@
             echo '<h2>Lista de usuarios:</h2>';
             print_r ($people);
 
-            $estandar = sort($people);
+            sort($people);
             echo '<h3>Lista ordenada ascendetemente:</h3>';
             print_r ($people);
 
-            $invertida = asort($people);
+            sort($people);
             echo '<h4>Lista ordenada descendetemente:</h4>';
             print_r ($people);
 
         }else{
             echo 'Contraseña incorrecta';
-            header("Location: index.php");
         }
     }else{
         echo 'Usuario no encontrado';
